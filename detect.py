@@ -32,7 +32,7 @@ while True:
         area = cv2.contourArea(contour)
 
         # Lọc những vùng có diện tích nhỏ để loại bỏ nhiễu
-        if area > 1000:
+        if area > 500:
             # Tìm bounding box của contour
             x, y, w, h = cv2.boundingRect(contour)
 
